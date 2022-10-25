@@ -1,0 +1,172 @@
+<div>
+  <form [formGroup]="login" (ngSubmit)="clickHandler(login)">
+    <div class="main-get">
+      <div class="container-new">
+        <hr class="hr-container" />
+        <div class="form-new">
+          <h3 class="txt">Create Admin Account</h3>
+          <br />
+
+          <div class="row-new">
+            <div class="">
+              <label class="txt">Enter first Name:</label>
+            </div>
+            <div class="">
+              <input
+               formControlName="firstName"
+                class="inputBox"
+                type="text"
+                placeholder="Enter first name here"
+              /><br />
+              <div class="err-msg" *ngIf="newfirstName.invalid && newfirstName.touched">
+                Please enter first name
+              </div>
+            </div>
+          </div>
+
+          <div class="row-new">
+            <div class="">
+              <label class="txt">Enter Last Name:</label>
+            </div>
+            <div class="">
+              <input
+              formControlName="lastName"
+                class="inputBox"
+                type="text"
+                placeholder="Enter last name here"
+              /><br />
+              <div class="err-msg" *ngIf="newlastName.invalid && newlastName.touched">
+                Please enter last name
+              </div>
+            </div>
+          </div>
+
+          <div class="row-new">
+            <div class="">
+              <label class="txt">Enter address:</label>
+            </div>
+            <div class="">
+              <input
+              formControlName="address"
+                class="inputBox"
+                rows=""
+                cols="50"
+                placeholder="Enter address here"
+              /><br />
+              <div class="err-msg" *ngIf="newaddress.invalid && newaddress.touched">
+                Please enter address
+              </div>
+            </div>
+          </div>
+
+          <div class="row-new">
+            <div class="">
+              <label class="txt">Enter mobile number:</label>
+            </div>
+            <div class="">
+              <input
+              formControlName="mobile"
+                class="inputBox"
+                type="number"
+                placeholder="Enter mobile number here"
+              /><br />
+              <div class="err-msg" *ngIf="newmobile.invalid && newmobile.touched">
+                Please enter mobile number
+              </div>
+            </div>
+          </div>
+
+          <div class="row-new">
+            <div class="">
+              <label class="txt">Enter Email ID:</label>
+            </div>
+            <div class="">
+              <input
+              formControlName="emailId"
+                class="inputBox"
+                type="email"
+                placeholder="Enter Email ID here"
+              />
+              <div class="err-msg" *ngIf="newemailId.invalid && newemailId.touched">
+                Please enter email id
+              </div>
+            </div>
+          </div>
+
+          <div class="row-new">
+            <div class="">
+              <label class="txt">Enter Company Name:</label>
+            </div>
+            <div class="">
+              <input
+              formControlName="company"
+                class="inputBox"
+                type="text"
+                placeholder="Enter Company Name here"
+              />
+              <div class="err-msg" *ngIf="newcompany.invalid && newcompany.touched">
+                Please enter company name
+              </div>
+            </div>
+          </div>
+
+          <div class="row-new">
+            <div class="">
+              <label class="txt">Enter Username:</label>
+            </div>
+            <div class="">
+              <input
+              formControlName="username"
+                class="inputBox"
+                type="text"
+                placeholder="Enter user name here"
+              /><br />
+              <div class="err-msg" *ngIf="newusername.invalid && newusername.touched">
+                Please enter user name
+              </div>
+            </div>
+          </div>
+
+          <div class="row-new">
+            <div class="">
+              <label class="txt">Enter Password:</label>
+            </div>
+            <div class="">
+              <input
+              formControlName="password"
+                class="inputBox"
+                type="text"
+                placeholder="Enter password here"
+              /><br />
+              <div class="err-msg" *ngIf="newpassword.invalid && newpassword.touched">
+                Please enter password
+              </div>
+            </div>
+          </div>
+
+          <div class="row-new">
+            <div class="">
+              <label class="txt">Enter Confirm Password:</label>
+            </div>
+            <div class="">
+              <input
+              formControlName="confirm"
+                class="inputBox"
+                type="password"
+                placeholder="Enter password here"
+              /><br />
+              <div class="err-msg" *ngIf="newconfirm.invalid && newconfirm.touched">
+                Please enter confirm password
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <button class="btn btn-warning" type="reset">Clear Form</button>
+          <button class="btn btn-primary create-btn">Create Account</button>
+        </div>
+        <hr class="hr-container" />
+      </div>
+    </div>
+  </form>
+</div>

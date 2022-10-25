@@ -1,0 +1,33 @@
+<div>
+  <div class="new-login">
+    <div class="emp-system">Employee Management System</div>
+    <div class="log">
+      <div class="logins">
+        <img
+          class="profileImage"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4Ui8-aKNWj9bB8P5rLObzIRt30lQ-wpIOg&usqp=CAU"
+          alt=""
+        /><br /><br />
+        <input
+          class="inputBox"
+          type="email"
+          placeholder="Enter your Email id"
+          [(ngModel)]='inputEmail'
+        /><br /><br />
+        <input
+          class="inputBox"
+          type="text"
+          placeholder="Enter your password"
+          [(ngModel)]='inputPassword'
+        /><br /><br />
+        <div class="Registration">
+          <span class="signnew" (click)="signHandler()">Sign Up</span>
+        </div>
+        <br />
+        <button class="btn-new" (click)="clickHandler()">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,39 @@
+.main-get {
+    height: 100vh; 
+    width: 100%;
+    background-color: rgb(235, 224, 224);
+    display: flex;
+    justify-content: center;
+    .container-new {
+        margin-left: 10%;
+        margin-right: 10%;
+        .form-new {
+            margin-left: 50px;
+            margin-right: 50px;
+            .row-new {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                .txt {
+                    color: black;
+                }
+                .err-msg{
+                    color: red;
+                }
+            }
+            .create-btn{
+                margin-left: 2rem;
+            }
+        }
+        .hr-container {
+            border: 2px solid black;
+            margin-top: 5rem;
+        }
+    }
+    
+}
+
+
+
+
+

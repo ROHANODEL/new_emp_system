@@ -1,0 +1,60 @@
+$border: 2px solid black;
+
+.new-login {
+  background-color: rgb(236, 228, 228);
+  height: 100vh;
+  .emp-system {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .log {
+    display: flex;
+    justify-content: center;
+    .logins {
+      height: 400px;
+      width: 350px;
+      background-color: white;
+      border-radius: 20px;
+      -webkit-box-shadow: 10px 10px 15px 0px rgba(23, 18, 23, 0.47);
+      -moz-box-shadow: 10px 10px 15px 0px rgba(23, 18, 23, 0.47);
+      box-shadow: 10px 10px 15px 0px rgba(23, 18, 23, 0.47);
+      display: flex;
+      flex-direction: column;
+      .profileImage {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin-left: 130px;
+        margin-top: 15px;
+      }
+      .inputBox {
+        margin-left: 30px;
+        width: 290px;
+        border-bottom: 2px solid black;
+        padding: 5px;
+      }
+      .inputBox:hover {
+        border-top: $border;
+      }
+      .Registration {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        .signnew {
+          cursor: pointer;
+          color: rgb(51, 189, 125);
+          font-weight: bold;
+        }
+      }
+      .btn-new {
+        background-color: rgb(70, 151, 223);
+        margin-left: 120px;
+        width: 120px;
+        color: white;
+      }
+    }
+  }
+}
