@@ -23,13 +23,23 @@ constructor(
   //   return this.dataChange
   // }
 
+  
+  aaa(){
+    this.service.gardvalidation.subscribe((e:any)=>{
+      this.abc = e
+    })
+  }
+
+  abc = false
+
   canActivate(
     
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     //   console.log(this.dataChange)
     // return this.aaa();
-    return true
+   this.aaa()
+    return this.abc
   }
 
   // canActivateChild(

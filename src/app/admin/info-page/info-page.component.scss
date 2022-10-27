@@ -1,0 +1,32 @@
+$color: #c6538c;
+.Emp-dashboard {
+    height: 45rem;
+    margin: auto;
+    padding: 3rem;
+    background-color: rgb(206, 244, 244);
+    padding-left: 14rem;
+    .outer{
+        display: flex;
+    }
+    .massage-button{
+        margin-left: 3rem;
+    }
+    .profile-image {
+        height:200px;
+        width: 200px;
+        border-radius: 50%;
+        .img-style{
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+    }
+    .emp-info {
+        margin-left: 50px;
+        .heading{
+            color: $color;
+        }
+        .info{
+            margin-left: 3rem;
+        }
+    }
+}

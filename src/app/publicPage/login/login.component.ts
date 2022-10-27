@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
     if(this.inputEmail==='rohanodel1997@gmail.com' && this.inputPassword==='12345'){
       this.changedata = true
       // this.service.incomingData(true)
+      this.service.newgardvalidation(true)
       this.router.navigate(['/admin'])
     }
   }

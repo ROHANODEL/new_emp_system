@@ -1,2 +1,52 @@
-<p>admin-dashboard works!</p>
+<div class="first">
+  <div class="container custom-button">
+    <button class="btn btn-primary" type="button" onClick="{addHandler}">
+      Add Fields
+    </button>
+  </div>
+
+  <div class="search container">
+    <label><b>Search :-</b></label
+    >&emsp;&emsp;
+    <input type="text" placeholder="Search here" />
+  </div>
+
+  <div class="EmpDetail container">
+    <table
+      className="EmpTable table-responsive"
+      cellspacing="0"
+      cellpadding="5"
+    >
+      <tr>
+        <th class="tableData th-new">Sr.no</th>
+        <th class="tableData th-new">Name Of Employee</th>
+        <th class="tableData th-new">Role</th>
+        <th class="tableData th-new">Join Date</th>
+        <th class="tableData th-new">Experience</th>
+        <th class="tableData th-new">Salary</th>
+        <th class="tableData th-new">Gender</th>
+        <th class="tableData th-new">Phone no</th>
+        <th class="tableData th-new">Address</th>
+        <th class="tableData th-new">Upadate</th>
+        <th class="tableData th-new">Delete</th>
+        <th class="tableData th-new">Informaion</th>
+      </tr>
+      <tr *ngFor="let newdata of tabledata ">
+        <td class="tableData">{{newdata.id}}</td>
+        <td class="tableData">{{newdata.name}}</td>
+        <td class="tableData">{{newdata.role}}</td>
+        <td class="tableData">{{newdata.join_date}}</td>
+        <td class="tableData">{{newdata.experience}}</td>
+        <td class="tableData">{{newdata.salary}}</td>
+        <td class="tableData">{{newdata.gender}}</td>
+        <td class="tableData">{{newdata.phone_number}}</td>
+        <td class="tableData">{{newdata.address}}</td>
+        <td class="tableData "><button class="" >update</button></td>
+        <td class="tableData"><button class="" >delete</button></td>
+        <td class="tableData"><button (click)="handleInfo(newdata)" >Info</button></td>
+    </tr>
+    </table>
+  </div>
+</div>
+
 <router-outlet></router-outlet>

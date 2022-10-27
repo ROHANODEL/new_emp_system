@@ -1,0 +1,81 @@
+.first {
+    margin-top: 3%;
+  
+    .container {
+      width: 1200px;
+      margin: auto;
+    }
+  
+    .custom-button {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .search {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1rem;
+    }
+  
+    .EmpDetail {
+      margin-top: 1rem;
+      border-collapse: collapse;
+  
+      .EmpTable {
+        width: 100%;
+        border-collapse: collapse;
+      }
+  
+      .tableData {
+        border: 0.5px solid black;
+        margin-top: 5px;
+        text-align: center;
+      }
+  
+      .th-new {
+        background-color: antiquewhite;
+      }
+  
+  
+      .updateOrDeleteBottun {
+        border: 0.5px solid black;
+      }
+    }
+  }
+  
+  .modal-90w {
+    min-width: 50%;
+  }
+  
+  .formToUpdate {
+  
+    .row-new {
+      display: grid;
+      grid-template-columns: 30% 20%;
+      margin-left: 10%;
+    }
+  
+    .inputBox{
+      height: 32px;
+      
+    }
+  
+    .RadioButton{
+      margin-left: 30px;
+    }
+  
+    .Gender{
+      display: flex;
+      margin-left: 30px;
+      word-spacing: 30px;
+    }
+  
+    .body-btn{
+      display: flex;
+      justify-content: center;
+      .update-button{
+        margin-top: 1rem;
+      }
+    }
+  
+  }
