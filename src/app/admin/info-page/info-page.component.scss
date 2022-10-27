@@ -1,32 +1,43 @@
 $color: #c6538c;
+
 .Emp-dashboard {
     height: 45rem;
     margin: auto;
     padding: 3rem;
     background-color: rgb(206, 244, 244);
-    padding-left: 14rem;
-    .outer{
+
+    .outer {
         display: flex;
-    }
-    .massage-button{
-        margin-left: 3rem;
-    }
-    .profile-image {
-        height:200px;
-        width: 200px;
-        border-radius: 50%;
-        .img-style{
-            border-radius: 50%;
-            border: 1px solid black;
+        justify-content: space-around;
+
+        .profile-image {
+            height: 200px;
+            width: 200px;
+
+            .img-style {
+                border-radius: 50%;
+                border: 1px solid black;
+            }
         }
-    }
-    .emp-info {
-        margin-left: 50px;
-        .heading{
-            color: $color;
+
+        .emp-info {
+            margin-left: 50px;
+
+            .heading {
+                color: $color;
+            }
+
+            .info {
+                margin-left: 3rem;
+                font-size: 18px;
+            }
         }
-        .info{
-            margin-left: 3rem;
+
+        .edit-button {
+            background-color:rgb(153, 68, 232);
+            width: 4rem;
+            height: 2rem;
+            border-radius: 10px;
         }
     }
 }
