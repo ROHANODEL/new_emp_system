@@ -59,4 +59,9 @@ export class AdminDashboardComponent implements OnInit {
     this.router.navigate(['/info'])
   }
 
+
+  addHandler(){
+    this.router.navigate(['/addemp'])
+  }
+
 }

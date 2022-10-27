@@ -1,0 +1,43 @@
+.main-new {
+    height: 100%;
+    background-color: bisque;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+  
+    .formToUpdate {
+      border: 1px solid rgb(191, 191, 233);
+      background-color: white;
+      width: 800px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 25%;
+      border-radius: 1rem;
+      padding: 1rem;
+      margin-top: 2rem;
+  
+      .row-new {
+        display: grid;
+        grid-template-columns: 30% 10%;
+        margin-left: 18%;
+      }
+  
+      .inputBox {
+        height: 32px;
+      }
+  
+      .RadioButton {
+        margin-left: 30px;
+      }
+    }
+  }
+  .err-msg {
+    padding-left: 2rem;
+    width: 290px;
+    color: red;
+  }
+  .new-err-msg {
+    padding-left: 15rem;
+    width: 500px;
+    color: red;
+  }
+  
