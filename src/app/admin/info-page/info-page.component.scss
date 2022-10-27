@@ -21,7 +21,8 @@ $color: #c6538c;
         }
 
         .emp-info {
-            margin-left: 50px;
+            //margin-left: 10rem;
+            width: 30rem;
 
             .heading {
                 color: $color;
@@ -39,5 +40,13 @@ $color: #c6538c;
             height: 2rem;
             border-radius: 10px;
         }
+
+        .edit-button{
+            background-color: gray;
+            text-align: center;
+        }
+
+
+
     }
 }
