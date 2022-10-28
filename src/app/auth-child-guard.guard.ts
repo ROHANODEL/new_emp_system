@@ -1,5 +1,5 @@
 import { Injectable, OnInit } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, CanActivateChild, CanDeactivate, CanLoad, Route, RouterStateSnapshot, UrlSegment, UrlTree } from '@angular/router';
+import { ActivatedRouteSnapshot, CanActivate, CanActivateChild, CanDeactivate, CanLoad, Route, Router, RouterStateSnapshot, UrlSegment, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
 import { NewServiceService } from './service/new-service.service';
 
@@ -13,7 +13,8 @@ export class AuthChildGuardGuard implements CanActivate, OnInit {
   
   dataChange:any = false
 constructor(
-  private service : NewServiceService
+  private service : NewServiceService,
+  private route : Router
   ){}
 
   // aaa(){
@@ -33,13 +34,19 @@ constructor(
   abc = false
 
   canActivate(
-    
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     //   console.log(this.dataChange)
     // return this.aaa();
    this.aaa()
-    return this.abc
+   console.log('===========>',this.abc)
+  
+    if(this.abc) {
+      return this.abc
+     }else{ 
+      this.route.navigate(['/login'])
+      return false;
+     }
   }
 
   // canActivateChild(

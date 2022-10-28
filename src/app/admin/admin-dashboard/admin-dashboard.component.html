@@ -41,8 +41,8 @@
         <td class="tableData">{{newdata.gender}}</td>
         <td class="tableData">{{newdata.phone_number}}</td>
         <td class="tableData">{{newdata.address}}</td>
-        <td class="tableData "><button class="" >update</button></td>
-        <td class="tableData"><button class="" >delete</button></td>
+        <td class="tableData "><button (click)="updateHandle()" >update</button></td>
+        <td class="tableData"><button class="" (click)="handleDelete()"  >delete</button></td>
         <td class="tableData"><button (click)="handleInfo(newdata)" >Info</button></td>
     </tr>
     </table>
