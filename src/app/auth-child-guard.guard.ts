@@ -47,6 +47,7 @@ constructor(
       this.route.navigate(['/login'])
       return false;
      }
+     
   }
 
   // canActivateChild(

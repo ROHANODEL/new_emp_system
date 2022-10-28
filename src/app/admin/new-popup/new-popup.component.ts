@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-new-popup',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewPopupComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private activeModal: NgbActiveModal
+  ) { }
 
   ngOnInit(): void {
   }
 
+  closeModal(): void {
+    this.activeModal.close();
+  }
 }
