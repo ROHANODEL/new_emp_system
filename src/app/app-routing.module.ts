@@ -13,11 +13,9 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent, canActivate:[AuthChildGuardGuard]},
   {path:'admin',component:AdminDashboardComponent,canActivate:[AuthChildGuardGuard]},
-    //  children:[
       {path:'addemp',component:AddEmpComponent,canActivate:[AuthChildGuardGuard]},
       {path:'info',component:InfoPageComponent,canActivate:[AuthChildGuardGuard]},
       {path:'update',component:UpdateDataComponent,canActivate:[AuthChildGuardGuard]}
-    //  ]}
 ];
 
 @NgModule({
