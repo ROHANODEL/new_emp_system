@@ -63,7 +63,8 @@ export class AdminDashboardComponent implements OnInit {
   }
 
   updateHandle(){
-    this.router.navigate(['/update'])
+    // this.router.navigate(['/update'])
+    this.modal.open(NewPopupComponent, {size: 'xl'});
   }
 
 
