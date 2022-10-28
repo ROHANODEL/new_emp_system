@@ -9,6 +9,7 @@ import { UpdateDataComponent } from './admin/update-data/update-data.component';
 import { LoginComponent } from './publicPage/login/login.component';
 import { SignupComponent } from './publicPage/signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NewPopupComponent } from './admin/new-popup/new-popup.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UpdateDataComponent,
     LoginComponent,
     SignupComponent,
+    NewPopupComponent,
   ],
   imports: [
     BrowserModule,

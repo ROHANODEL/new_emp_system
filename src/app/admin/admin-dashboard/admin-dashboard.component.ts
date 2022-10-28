@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { NewServiceService } from 'src/app/service/new-service.service';
+import { NewPopupComponent } from '../new-popup/new-popup.component';
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -10,7 +12,8 @@ import { NewServiceService } from 'src/app/service/new-service.service';
 export class AdminDashboardComponent implements OnInit {
   constructor(
     private router : Router,
-    private service : NewServiceService
+    private service : NewServiceService,
+    private modal: NgbModal
   ) {}
 
   myName:string="shweta";
@@ -59,9 +62,16 @@ export class AdminDashboardComponent implements OnInit {
     this.router.navigate(['/info'])
   }
 
+  updateHandle(){
+    this.router.navigate(['/update'])
+  }
+
 
   addHandler(){
     this.router.navigate(['/addemp'])
   }
 
+  handleDelete(): void {
+    this.modal.open(NewPopupComponent, {size: 'xl'});
+  }
 }
